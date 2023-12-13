@@ -4,88 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Propiedades en Alquiler</title>
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
   </head>
-  <link rel="stylesheet" href="./assets/css/estilos.css" />
   <body>
-    <div id="propiedades" class="container_alquiler"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Inmobiliaria ADL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="propiedades_venta.html">En venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="propiedades_alquiler.html">Alquiler</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid main-section">
+      <h1 class="text-white">Encuentra tu nueva propiedad</h1>
+    </main>
+    <div class="container mt-5">
+      <!-- Propiedades en venta -->
+      <section id="venta">
+        <h2>Propiedades en venta</h2>
+        <div id="propiedades" class="container_alquiler"></div>
+      </section>
+      <hr />
+    </div>
 
-    <script>
-      let html = "";
-      const propiedades_alquiler = [
-        {
-          Nombre: "propiedad en viña del mar",
-          scr: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          descripcion: "esta ubicada en un lugar residencial",
-          ubicacion: "ulises poirier 289 achupalla",
-          habitaciones: "3 habitaciones",
-          costo: 350.0,
-          smoke: false,
-          pets: true,
-        },
-        // {
-        //   Nombre: "",
-        //   scr: "",
-        //   descripcion: "",
-        //   ubicacion:"",
-        //   habitaciones:"",
-        //   costo: ,
-        //   smoke: false,
-        //   pets: true
-        // },{
-        //   Nombre: "",
-        //   scr: "",
-        //   descripcion: "",
-        //   ubicacion:"",
-        //   habitaciones:"",
-        //   costo: ,
-        //   smoke: false,
-        //   pets: true
-        // },{
-        //   Nombre: "",
-        //   scr: "",
-        //   descripcion: "",
-        //   ubicacion:"",
-        //   habitaciones:"",
-        //   baños:"",
-        //   costo: ,
-        //   smoke: false,
-        //   pets: true
-        // },
-      ];
-
-      for (let propiedad of propiedades_alquiler) {
-        html += `
-          <div id="propiedad">
-            <img
-              src="${propiedad.src}"
-              class="card-img-top"
-              alt="Imagen de la propiedad"
-            />
-            <div>
-              <h5>${propiedad.Nombre}</h5>
-              <p>${propiedad.descripcion}</p>
-              <p>
-                <i class="fas fa-map-marker-alt"></i>${propiedad.ubicacion}
-              </p>
-              <p>
-                <i class="fas fa-bed"></i>${propiedad.habitaciones} |
-                <i class="fas fa-bath"></i>${propiedad.baños}
-              </p>
-              <p>
-                <i class="fas fa-dollar-sign"></i>${propiedad.costo}
-              </p>
-              <p class="text-danger">
-                <i class="fas fa-smoking-ban"></i>${propiedad.smoke}
-              </p>
-              <p class="text-danger">
-                <i class="fa-solid fa-ban"></i>${propiedad.pets}
-              </p>
-            </div>
-          </div>
-        `;
-      }
-      const ele = document.querySelector("#propiedades");
-      ele.innerHTML = html;
-    </script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f5bdbb41e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
