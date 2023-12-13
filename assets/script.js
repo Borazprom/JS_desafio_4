@@ -1,16 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Propiedades en Alquiler</title>
-  </head>
-  <link rel="stylesheet" href="./assets/css/estilos.css" />
-  <body>
-    <div id="propiedades" class="container_alquiler"></div>
+const propiedades_alquiler = [
+    {
+      Nombre: "",
+      scr: "",
+      descripcion: "",
+      ubicacion:"",
+      habitaciones:"",
+      costo: ,
+      smoke: false,
+      pets: true
+    },
+    {
+      Nombre: "",
+      scr: "",
+      descripcion: "",
+      ubicacion:"",
+      habitaciones:"",
+      costo: ,
+      smoke: false,
+      pets: true
+    },{
+      Nombre: "",
+      scr: "",
+      descripcion: "",
+      ubicacion:"",
+      habitaciones:"",
+      costo: ,
+      smoke: false,
+      pets: true
+    },{
+      Nombre: "",
+      scr: "",
+      descripcion: "",
+      ubicacion:"",
+      habitaciones:"",
+      costo: ,
+      smoke: false,
+      pets: true
+    },
+  ];
 
-    <script>
-      let html = "";
+    function propiedadesAlquiler (){
+    
+    let html = "";
       const propiedades_alquiler = [
         {
           Nombre: "propiedad en viña del mar",
@@ -59,7 +90,7 @@
             <img
               src="${propiedad.src}"
               class="card-img-top"
-              alt="Imagen de la propiedad"
+              alt="Imagen del departamento"
             />
             <div>
               <h5>${propiedad.Nombre}</h5>
@@ -86,6 +117,4 @@
       }
       const ele = document.querySelector("#propiedades");
       ele.innerHTML = html;
-    </script>
-  </body>
-</html>
+    }

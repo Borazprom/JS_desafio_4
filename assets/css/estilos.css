@@ -17,3 +17,12 @@
 .card img{
     height: 250px;
 }
+.container_alquiler {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.propiedad {
+    width: 30%;
+    margin-bottom: 20;
+  }
